@@ -8,6 +8,9 @@ const app = express();
 app.get('/_health', (req, res) => {
   res.status(200).json({ message: 'OK' });
 });
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
 
 // Start the server on port 3000
 const server = app.listen(3000, () => {
