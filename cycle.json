@@ -17,7 +17,7 @@
           "network": {
             "public": "enable",
             "hostname": "healthcheck",
-            "ports": ["80:80"]
+            "ports": ["80:80", "443:80"]
           },
           "deploy": {
             "instances": 1,
